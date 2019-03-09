@@ -1,8 +1,8 @@
 /*
 Author: Neosha Narayanan
 
-Uses Node to get MBTA data for Route 1 buses every 15 seconds for 1 hour
-
+Uses node-fetch to get MBTA data for Route 1 buses every 15 seconds for 1 hour
+and stores the data in db.json using lowdb NPM
 
 */
 
