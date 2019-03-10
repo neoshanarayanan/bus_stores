@@ -1,3 +1,10 @@
+/*
+Author: Neosha Narayanan
+Reads db.json and counts number of entries (i.e., number of vehicles)
+
+*/
+
+
 var low = require('lowdb');
 var fs  = require('lowdb/adapters/FileSync');
 var adapter = new fs('db.json'); // create new json file!!
