@@ -21,7 +21,7 @@ var vehicles_data = db.get('vehicles').value();
 //console.log(vehicles_data);
 
 
-function getUniqueIDs(){
+function getUniqueIDs(vehicles_data){
     var num_vehicles = vehicles_data.length; // get number of vehicles
     var uniqueIDs = [];
     var duplicates = [];
@@ -46,7 +46,7 @@ function getUniqueIDs(){
     return(uniqueIDs);
 }
 
-getUniqueIDs();
+getUniqueIDs(vehicles_data);
 
 
 

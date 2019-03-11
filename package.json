@@ -1,0 +1,24 @@
+{
+  "name": "bus_stores",
+  "version": "1.0.0",
+  "description": "Problem Set - Bus Data Collection and Analysis",
+  "main": "get_bus_data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neoshanarayanan/bus_stores.git"
+  },
+  "author": "neosha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neoshanarayanan/bus_stores/issues"
+  },
+  "homepage": "https://github.com/neoshanarayanan/bus_stores#readme",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {}
+}

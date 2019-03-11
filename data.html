@@ -4,16 +4,17 @@
 <script src="db.js"></script>
 
 <h1>Select Bus</h1>
-<select id = "bus dropdown"></select>
 
+<select id = "bus dropdown", onchange = "printBusInfo()"></select>
+
+<p id = "busInfo"></p>
 
 <script>
 
 function getUniqueIDs(vehicles_data){
-    var num_vehicles = vehicles_data.length; // get number of vehicles
+
     var uniqueIDs = [];
-    var duplicates = [];
-   
+
     // iterates through each vehicle in vehicles_data
     vehicles_data.forEach(function(element, index){
         var id = element['id'];
@@ -21,7 +22,6 @@ function getUniqueIDs(vehicles_data){
         if(index === 0){ // push the first element into unique IDs
             uniqueIDs.push(id);
         }else{
-           
             if(!uniqueIDs.includes(id)){
                uniqueIDs.push(id);
             }
@@ -33,21 +33,39 @@ function getUniqueIDs(vehicles_data){
 }
 
 var vehicleinfo = data.vehicles;
-//console.log("vehicle info = " + JSON.stringify(vehicleinfo));
 
-//console.log("what up fam");
 var ids = getUniqueIDs(vehicleinfo);
-
 
 var dropdown = document.getElementById("bus dropdown");
 
-ids.forEach(function(busID){
+
+// for each ID, create an option under the dropdown
+// add an event listener for each option
+
+ids.forEach(function(busID){ 
+
     var option = document.createElement("option");
     option.innerHTML = busID;
-    
+    option.setAttribute("id", busID); // set the id of the option to the label
     dropdown.appendChild(option);
 
 });
+
+
+function printBusInfo(){
+    var id = document.getElementById("bus dropdown").value;
+
+    var busList = [];
+    vehicleinfo.forEach(function(busdata){
+        var busID = busdata['id'];
+        if(busID === id){
+            busList.push(busdata); // pushes bus's data to busList
+        }
+    });
+
+    document.getElementById("busInfo").innerHTML = JSON.stringify(busList);
+
+}
 
 </script>
 
