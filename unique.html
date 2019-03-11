@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<script src="db.js"></script>
+
+<h1>Select Bus</h1>
+<select id = "bus dropdown"></select>
+
+
+<script>
+
+function getUniqueIDs(vehicles_data){
+    var num_vehicles = vehicles_data.length; // get number of vehicles
+    var uniqueIDs = [];
+    var duplicates = [];
+
+   
+    // iterates through each vehicle in vehicles_data
+    vehicles_data.forEach(function(element, index){
+        var id = element['id'];
+        //console.log(id);
+
+        if(index === 0){ // push the first element into unique IDs
+            uniqueIDs.push(id);
+        }else{
+           
+            if(!uniqueIDs.includes(id)){
+               uniqueIDs.push(id);
+            }
+        }
+    });
+    //console.log("uniqueIDs has been calculated");
+    
+    return(uniqueIDs);
+}
+
+var vehicleinfo = data.vehicles;
+//console.log("vehicle info = " + JSON.stringify(vehicleinfo));
+
+//console.log("what up fam");
+var ids = getUniqueIDs(vehicleinfo);
+
+
+var dropdown = document.getElementById("bus dropdown");
+
+ids.forEach(function(busID){
+    var option = document.createElement("option");
+    option.innerHTML = busID;
+    dropdown.appendChild(option);
+
+});
+
+</script>
+
+
+</html>

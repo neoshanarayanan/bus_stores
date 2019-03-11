@@ -1,0 +1,144 @@
+var data = {
+    "vehicles": [
+      {
+        "id": "y1739",
+        "label": "1739",
+        "direction_id": 0,
+        "latitude": 42.370059967041016,
+        "longitude": -71.11299133300781
+      },
+      {
+        "id": "y1777",
+        "label": "1777",
+        "direction_id": 0,
+        "latitude": 42.340492248535156,
+        "longitude": -71.0815658569336
+      },
+      {
+        "id": "y1802",
+        "label": "1802",
+        "direction_id": 1,
+        "latitude": 42.36572265625,
+        "longitude": -71.10433197021484
+      },
+      {
+        "id": "y1803",
+        "label": "1803",
+        "direction_id": 0,
+        "latitude": 42.367958068847656,
+        "longitude": -71.1079330444336
+      },
+      {
+        "id": "y1809",
+        "label": "1809",
+        "direction_id": 0,
+        "latitude": 42.3396110534668,
+        "longitude": -71.08055877685547
+      },
+      {
+        "id": "y1861",
+        "label": "1861",
+        "direction_id": 1,
+        "latitude": 42.33196258544922,
+        "longitude": -71.07902526855469
+      },
+      {
+        "id": "y1873",
+        "label": "1873",
+        "direction_id": 1,
+        "latitude": 42.37107849121094,
+        "longitude": -71.11605834960938
+      },
+      {
+        "id": "y1880",
+        "label": "1880",
+        "direction_id": 0,
+        "latitude": 42.36446762084961,
+        "longitude": -71.1020736694336
+      },
+      {
+        "id": "y1895",
+        "label": "1895",
+        "direction_id": 1,
+        "latitude": 42.329856872558594,
+        "longitude": -71.08419799804688
+      },
+      {
+        "id": "y1903",
+        "label": "1903",
+        "direction_id": 1,
+        "latitude": 42.32960891723633,
+        "longitude": -71.08355712890625
+      },
+      {
+        "id": "y1739",
+        "label": "1739",
+        "direction_id": 0,
+        "latitude": 42.370059967041016,
+        "longitude": -71.11299133300781
+      },
+      {
+        "id": "y1777",
+        "label": "1777",
+        "direction_id": 0,
+        "latitude": 42.340492248535156,
+        "longitude": -71.0815658569336
+      },
+      {
+        "id": "y1802",
+        "label": "1802",
+        "direction_id": 1,
+        "latitude": 42.36572265625,
+        "longitude": -71.10433197021484
+      },
+      {
+        "id": "y1803",
+        "label": "1803",
+        "direction_id": 0,
+        "latitude": 42.367958068847656,
+        "longitude": -71.1079330444336
+      },
+      {
+        "id": "y1809",
+        "label": "1809",
+        "direction_id": 0,
+        "latitude": 42.3396110534668,
+        "longitude": -71.08055877685547
+      },
+      {
+        "id": "y1861",
+        "label": "1861",
+        "direction_id": 1,
+        "latitude": 42.33196258544922,
+        "longitude": -71.07902526855469
+      },
+      {
+        "id": "y1873",
+        "label": "1873",
+        "direction_id": 1,
+        "latitude": 42.37107849121094,
+        "longitude": -71.11605834960938
+      },
+      {
+        "id": "y1880",
+        "label": "1880",
+        "direction_id": 0,
+        "latitude": 42.36446762084961,
+        "longitude": -71.1020736694336
+      },
+      {
+        "id": "y1895",
+        "label": "1895",
+        "direction_id": 1,
+        "latitude": 42.329856872558594,
+        "longitude": -71.08419799804688
+      },
+      {
+        "id": "y1903",
+        "label": "1903",
+        "direction_id": 1,
+        "latitude": 42.32960891723633,
+        "longitude": -71.08355712890625
+      }
+    ]
+  }

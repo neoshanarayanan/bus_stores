@@ -26,6 +26,7 @@ function getUniqueIDs(){
     var uniqueIDs = [];
     var duplicates = [];
 
+   
     // iterates through each vehicle in vehicles_data
     vehicles_data.forEach(function(element, index){
         var id = element['id'];
@@ -34,9 +35,8 @@ function getUniqueIDs(){
         if(index === 0){ // push the first element into unique IDs
             uniqueIDs.push(id);
         }else{
-            var notUnique = uniqueIDs.includes(id); // returns false if the ID is not in the array already
            
-            if(notUnique === false){
+            if(!uniqueIDs.includes(id)){
                uniqueIDs.push(id);
             }
         }
