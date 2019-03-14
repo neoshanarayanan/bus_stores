@@ -55,6 +55,7 @@ ids.forEach(function(busID){
 
 // ============= SET UP MAP ======================
 
+var map;
 function init(){
 	var latlng = new google.maps.LatLng(42.359939, -71.0984987);
 	var myOptions = {
@@ -63,7 +64,7 @@ function init(){
 		mapTypeId : google.maps.MapTypeId.ROADMAP
     };
     
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    map = new google.maps.Map(document.getElementById('map'), myOptions);
 }
 
 google.maps.event.addDomListener(window,'load',init);
@@ -71,11 +72,11 @@ google.maps.event.addDomListener(window,'load',init);
 // ============== DISPLAY BUS INFORMATION ========
 
 
-var dot = document.createElement("div");
-dot.id = Math.random()*10000;
-dot.style.borderRadius = '20px';
-dot.style.opacity = '0.5';
-dot.style.color = 'red';
+// var dot = document.createElement("div");
+// dot.id = Math.random()*10000;
+// dot.style.borderRadius = '20px';
+// dot.style.opacity = '0.5';
+// dot.style.color = 'red';
 
 
 
@@ -96,9 +97,8 @@ function printBusInfo(){
         console.log("about to create a marker");
         var marker = new google.maps.Marker({
             position: ll,
-            map: map,
-            title : busID,
-            icon : dot
+            map : map,
+            title : busID
         });
         console.log("marker is created");
     });
